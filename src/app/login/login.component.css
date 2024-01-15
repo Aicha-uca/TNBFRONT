@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Jost', sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #262626, #333333);
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* Center the forms horizontally */
+  align-items: center;
+  height: 100vh;
+}
+
+.signup,
+.login {
+  width: 80%;
+  padding: 200px;
+  background: #4fb7ae;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  position: relative; /* Added relative positioning */
+}
+
+.signup {
+  margin-right: 10px;
+}
+
+/* Added futuristic design */
+.signup::before,
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, #e890e2, #dc6dd4);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#chk {
+  display: none;
+}
+
+label {
+  color: #fff;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 10px ;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.in {
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  justify-content: center;
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #dc6dd4;
+  font-size: 1.2em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e890e2;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.green-message {
+  color: rgb(10, 248, 78);
+  margin-top: 5px;
+  margin-left: 10px;
+}
